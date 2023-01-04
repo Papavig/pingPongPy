@@ -81,12 +81,10 @@ while True:
 			if event.key == pygame.K_DOWN:
 				player_speed -= 6
 	
-	#Game Logic
 	ball_animation()
 	player_animation()
 	opponent_ai()
 
-	# Visuals 
 	screen.fill(bg_color)
 	pygame.draw.rect(screen, light_grey, player)
 	pygame.draw.rect(screen, light_grey, opponent)
